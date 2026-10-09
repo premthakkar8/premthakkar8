@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
   <title id="title">Hi, I'm Prem Thakkar</title>
-  <desc id="desc">Computer Engineering Student, Full-Stack Development, Python and AI. A moonlit ocean with slowly moving waves.</desc>
+  <desc id="desc">AI Consultant and Web Developer. A moonlit ocean with slowly moving waves.</desc>
   <defs>
     <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#020617"/>
@@ -80,7 +80,7 @@
 
   <text class="sans" x="70" y="104" font-size="64" font-weight="700" letter-spacing="-1.5" fill="#F0F9FF">Hi, I'm <tspan fill="url(#name)">Prem Thakkar</tspan></text>
 
-  <text class="sans" x="72" y="150" font-size="27" font-weight="500" fill="#9FB4C8">Computer Engineering Student<tspan fill="#38BDF8" fill-opacity="0.7">  |  </tspan>Full-Stack Development<tspan fill="#38BDF8" fill-opacity="0.7">  |  </tspan>Python &amp; AI</text>
+  <text class="sans" x="72" y="150" font-size="27" font-weight="500" fill="#9FB4C8">AI Consultant<tspan fill="#38BDF8" fill-opacity="0.7">  |  </tspan>Web Developer</text>
 
   <g class="mono" font-size="20">
     <text x="72" y="194" fill="#5eead4">&gt;</text>
