@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+  <title id="title">Hi, I'm Prem Thakkar</title>
+  <desc id="desc">Computer Engineering Student, Full-Stack Development, Python and AI. A moonlit ocean with slowly moving waves.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#020617"/>
+      <stop offset="0.72" stop-color="#0b2f4e"/>
+      <stop offset="1" stop-color="#0b2f4e"/>
+    </linearGradient>
+    <radialGradient id="moon-glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#d6f1ff" stop-opacity="0.45"/>
+      <stop offset="0.35" stop-color="#7dd3fc" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#7dd3fc" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="moon" cx="0.42" cy="0.4" r="0.6">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#cfe8f5"/>
+    </radialGradient>
+    <linearGradient id="name" gradientUnits="userSpaceOnUse" x1="300" y1="0" x2="780" y2="0">
+      <stop offset="0" stop-color="#7dd3fc"/>
+      <stop offset="1" stop-color="#5eead4"/>
+    </linearGradient>
+    <clipPath id="frame">
+      <rect x="1" y="1" width="1198" height="298" rx="20"/>
+    </clipPath>
+    <style>
+      .sans { font-family: Inter, 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; }
+      .mono { font-family: 'JetBrains Mono', 'Cascadia Code', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; }
+      .wave-a { animation: drift 16s linear infinite; }
+      .wave-b { animation: drift 11s linear infinite reverse; }
+      .wave-c { animation: drift 7s linear infinite; }
+      .glint { animation: glint 3.2s ease-in-out infinite; }
+      .type { animation: type 2s steps(33, end) 0.4s both; }
+      .cursor { animation: cursor-move 2s steps(33, end) 0.4s both, blink 1.1s step-end 2.4s infinite; }
+      @keyframes drift { to { transform: translateX(-300px); } }
+      @keyframes glint { 0%, 100% { opacity: 0.25; } 50% { opacity: 0.9; } }
+      @keyframes type { from { clip-path: inset(0 100% 0 0); } to { clip-path: inset(0 0 0 0); } }
+      @keyframes cursor-move { from { transform: translateX(-488px); } to { transform: translateX(0); } }
+      @keyframes blink { 50% { opacity: 0; } }
+      @media (prefers-reduced-motion: reduce) {
+        .wave-a, .wave-b, .wave-c, .glint, .type, .cursor { animation: none; }
+      }
+    </style>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="300" fill="url(#sky)"/>
+
+    <g fill="#e2f2ff">
+      <circle cx="640" cy="34" r="1.1" opacity="0.7"/>
+      <circle cx="720" cy="72" r="0.9" opacity="0.5"/>
+      <circle cx="812" cy="26" r="1.2" opacity="0.8"/>
+      <circle cx="880" cy="118" r="0.8" opacity="0.4"/>
+      <circle cx="1120" cy="40" r="1" opacity="0.6"/>
+      <circle cx="1160" cy="132" r="0.8" opacity="0.4"/>
+      <circle cx="560" cy="96" r="0.8" opacity="0.35"/>
+      <circle cx="930" cy="52" r="0.9" opacity="0.55"/>
+    </g>
+
+    <circle cx="1010" cy="96" r="120" fill="url(#moon-glow)"/>
+    <circle cx="1010" cy="96" r="24" fill="url(#moon)"/>
+    <circle cx="1002" cy="90" r="5" fill="#b9d7e6" opacity="0.5"/>
+    <circle cx="1018" cy="104" r="3.5" fill="#b9d7e6" opacity="0.45"/>
+
+    <rect y="212" width="1200" height="88" fill="#06233b"/>
+
+    <g fill="#d6f1ff">
+      <rect class="glint" x="986" y="220" width="48" height="2" rx="1"/>
+      <rect class="glint" x="972" y="232" width="70" height="2" rx="1" style="animation-delay: -0.8s"/>
+      <rect class="glint" x="995" y="245" width="34" height="2" rx="1" style="animation-delay: -1.6s"/>
+      <rect class="glint" x="960" y="258" width="92" height="2" rx="1" style="animation-delay: -2.2s"/>
+      <rect class="glint" x="985" y="272" width="52" height="2" rx="1" style="animation-delay: -0.4s"/>
+    </g>
+
+    <path class="wave-a" fill="#0b4d6b" fill-opacity="0.55" d="M0 222 Q75 212 150 222 T300 222 T450 222 T600 222 T750 222 T900 222 T1050 222 T1200 222 T1350 222 T1500 222 V300 H0 Z"/>
+    <path class="wave-b" fill="#08486a" fill-opacity="0.7" d="M0 248 Q75 236 150 248 T300 248 T450 248 T600 248 T750 248 T900 248 T1050 248 T1200 248 T1350 248 T1500 248 V300 H0 Z"/>
+    <path class="wave-c" fill="#042a45" d="M0 274 Q75 264 150 274 T300 274 T450 274 T600 274 T750 274 T900 274 T1050 274 T1200 274 T1350 274 T1500 274 V300 H0 Z"/>
+  </g>
+  <rect x="1" y="1" width="1198" height="298" rx="20" fill="none" stroke="#123a57" stroke-width="2"/>
+
+  <text class="sans" x="70" y="104" font-size="64" font-weight="700" letter-spacing="-1.5" fill="#F0F9FF">Hi, I'm <tspan fill="url(#name)">Prem Thakkar</tspan></text>
+
+  <text class="sans" x="72" y="150" font-size="27" font-weight="500" fill="#9FB4C8">Computer Engineering Student<tspan fill="#38BDF8" fill-opacity="0.7">  |  </tspan>Full-Stack Development<tspan fill="#38BDF8" fill-opacity="0.7">  |  </tspan>Python &amp; AI</text>
+
+  <g class="mono" font-size="20">
+    <text x="72" y="194" fill="#5eead4">&gt;</text>
+    <text class="type" x="100" y="194" fill="#CBD5E1" textLength="480" lengthAdjust="spacingAndGlyphs">building useful web &amp; AI products</text>
+    <rect class="cursor" x="588" y="176" width="10" height="22" rx="1.5" fill="#5eead4"/>
+  </g>
+</svg>
